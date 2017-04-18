@@ -1,1 +1,40 @@
-{     "devDependencies": {         "geo-proximity": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-geo-proximity",     "homepage": "https://github.com/npmtest/node-npmtest-geo-proximity",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-geo-proximity.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for  [geo-proximity (v2.3.2)](https://github.com/arjunmehta/node-geo-proximity)  [![npm package](https://img.shields.io/npm/v/npmtest-geo-proximity.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-geo-proximity) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-geo-proximity.svg)](https://travis-ci.org/npmtest/node-npmtest-geo-proximity)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "geo-proximity": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-geo-proximity",
+    "keywords": [
+        "coverage",
+        "test",
+        "geo-proximity"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_geo_proximity.js",
+    "name": "npmtest-geo-proximity",
+    "nameAlias": "npmtest_geo_proximity",
+    "nameOriginal": "npmtest-geo-proximity",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-geo-proximity.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
