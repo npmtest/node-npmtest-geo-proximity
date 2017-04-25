@@ -1,6 +1,7 @@
 # npmtest-geo-proximity
 
-test coverage for  [geo-proximity (v2.3.2)](https://github.com/arjunmehta/node-geo-proximity)  [![npm package](https://img.shields.io/npm/v/npmtest-geo-proximity.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-geo-proximity) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-geo-proximity.svg)](https://travis-ci.org/npmtest/node-npmtest-geo-proximity)
+#### basic test coverage for  [geo-proximity (v2.3.2)](https://github.com/arjunmehta/node-geo-proximity)  [![npm package](https://img.shields.io/npm/v/npmtest-geo-proximity.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-geo-proximity) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-geo-proximity.svg)](https://travis-ci.org/npmtest/node-npmtest-geo-proximity)
+
 #### Super fast proximity searches of geo coordinates.
 
 [![NPM](https://nodei.co/npm/geo-proximity.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/geo-proximity)
@@ -9,7 +10,7 @@ test coverage for  [geo-proximity (v2.3.2)](https://github.com/arjunmehta/node-g
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-geo-proximity/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-geo-proximity/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-geo-proximity/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-geo-proximity/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-geo-proximity/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-geo-proximity/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-geo-proximity/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-geo-proximity/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-geo-proximity/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-geo-proximity/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-geo-proximity/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-geo-proximity/build/coverage.html/index.html)
 
@@ -91,7 +92,8 @@ test coverage for  [geo-proximity (v2.3.2)](https://github.com/arjunmehta/node-g
     "scripts": {
         "test": "nodeunit test/test.js && browserify test/browser_test.js -o test/browser_test_compiled.js && echo '\n  Testing in Browser' && mocha-phantomjs test/browser.html"
     },
-    "version": "2.3.2"
+    "version": "2.3.2",
+    "bin": {}
 }
 ```
 
